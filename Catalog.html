@@ -7,47 +7,62 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <div>
-                <a href="index.html">
-                    <img src="img/ingex-logo.svg" width="150" height="150" alt="Логотип компании GllacyShop">
-                </a>
-            </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Каталог</a>
-                        <ul>
-                            <li>
-                                <a href="catalog.html">Сливочное</a>
-                            </li>
-                            <li>
-                                <a href="#">Щербеты</a>
-                            </li>
-                            <li>
-                                <a href="#">Фруктовый лед</a>
-                            </li>
-                            <li>
-                                <a href="#">Мелорин</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Доставка и оплата</a></li>
-                    <li> <a href="#">О компании</a></li>
-                </ul>
-            </nav>
-            <div>
-                <a href="#">Поиск</a>
-                <a href="#">Вход</a>
-                <a href="#">2 товара</a>
-            </div>
-            <div>
-                <p>с 10 до 20, ежедневно</p>
-                <a href="tel:+88124502525">8 812 450-25-25</a>
-            </div>
+
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a class="main-header-logo">
+                <img src="img/Index-logo.svg" width="154" height="64" alt="Логотип компании GllacyShop" />
+            </a>
+            <ul class="site-navigation">
+                <li class="nav-item">
+                    <a href="#">Каталог</a>
+                    <ul class="nav-dropdown-list">
+                        <li class="nav-item nav-dropdown-item">
+                            <a href="catalog.html">Сливочное</a>
+                        </li>
+                        <li class="nav-item nav-dropdown-item">
+                            <a href="#">Щербеты</a>
+                        </li>
+                        <li class="nav-item nav-dropdown-item">
+                            <a href="#">Фруктовый лед</a>
+                        </li>
+                        <li class="nav-item nav-dropdown-item">
+                            <a href="#">Мелорин</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a href="#">Доставка и оплата</a></li>
+                <li class="nav-item"><a href="#">О компании</a></li>
+            </ul>
+        </nav>
+        <div class="user-form">
+            <ul class="user-list">
+                <li class="user-item btn-Search">
+                    <a class="search-link" href="#">
+                        <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 14.665l-4.921-4.932a6.144 6.144 0 00-.994-8.273 6.113 6.113 0 00-8.307.352 6.141 6.141 0 00-.293 8.328 6.11 6.11 0 008.262.937L14.659 16 16 14.665zm-9.918-4.288a4.245 4.245 0 01-3.928-2.63 4.269 4.269 0 01.922-4.643 4.248 4.248 0 014.632-.923 4.253 4.253 0 012.624 3.936 4.274 4.274 0 01-1.247 3.01 4.256 4.256 0 01-3.003 1.25z"/></svg>
+                        <span>Поиск</span>
+                    </a>
+                </li>
+                <li class="user-item btn-login">
+                    <a class="login-link" href="#">
+                        <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" fill="#fff"/><path d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 002 2h13a2 2 0 002-2V2a2 2 0 00-2-2z"/></svg>
+                        <span>Вход</span>
+                    </a>
+                </li>
+                <li class="user-item btn-basket">
+                    <a class="basket-link" href="#">
+                        <svg width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.703 2l-.241-2H0v2h3.668l1.511 13h14.108L21 2H5.703zm11.8 11H6.973L5.965 4h12.727l-1.189 9zM7.034 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2zM16.103 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2z"/></svg>
+                        <span>Корзина</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="info">
+            <p><span class="info-time">с 10 до 20, ежедневно</span>
+                <a class="info-phone" href="tel:+88124502525">8 812 450-25-25</a></p>
         </div>
     </header>
+
     <main>
         <div>
             <ul>
@@ -63,18 +78,18 @@
             </ul>
             <h1>Сливочное мороженое</h1>
         </div>
-        <section>
+        <section class="main-filter">
             <div>
                 <h2>Фільтр</h2>
                 <form method="GET" id="filter-catalog" action="https://echo.htmlacademy.ru">
                     <fieldset>
                         <legend>Сортировка:</legend>
                         <select form="filter-catalog">
-                <option value="по популярности">по популярности</option>
-                <option value="сначала недорогие">сначала недорогие</option>
-                <option value="сначала дорогие">сначала дорогие</option>
-                <option value="по жирности">по жирности</option>
-              </select>
+                          <option value="по популярности">по популярности</option>
+                          <option value="сначала недорогие">сначала недорогие</option>
+                          <option value="сначала дорогие">сначала дорогие</option>
+                          <option value="по жирности">по жирности</option>
+                        </select>
                     </fieldset>
                     <fieldset>
                         <legend>Цена: 100 ₽ – 500 ₽</legend>
@@ -129,30 +144,54 @@
                 </form>
             </div>
         </section>
-        <section>
+        <section class="main-catalog">
             <div>
                 <div>
                     <ul>
                         <li>
-                            <img src="https://via.placeholder.com/150x100" alt="Хит 1">
+                            <img src="img/hit_1.jpg" alt="Хит 1" width="267" height="267">
                             <p>310 ₽/кг</p>
                             <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
                             <a href="#">Быстрый просмотр</a>
                         </li>
                         <li>
-                            <img src="https://via.placeholder.com/150x100" alt="Хит 2">
+                            <img src="img/hit_2.jpg" alt="Хит 2" width="267" height="267">
                             <p>380 ₽/кг</p>
                             <p>Сливочно-кофейное с кусочками шоколада</p>
                             <a href="#">Быстрый просмотр</a>
                         </li>
                         <li>
-                            <img src="https://via.placeholder.com/150x100" alt="Хит 3">
+                            <img src="img/hit_3.jpg" alt="Хит 3" width="267" height="267">
                             <p>355 ₽/кг</p>
                             <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
                             <a href="#">Быстрый просмотр</a>
                         </li>
                         <li>
-                            <img src="https://via.placeholder.com/150x100" alt="Хит 4">
+                            <img src="img/hit_4.jpg" alt="Хит 4" width="267" height="267">
+                            <p>415 ₽/кг</p>
+                            <p>Сливочное крем-брюле с карамельной подливкой </p>
+                            <a href="#">Быстрый просмотр</a>
+                        </li>
+                        <li>
+                            <img src="img/hit_5.jpg" alt="Хит 5" width="267" height="267">
+                            <p>415 ₽/кг</p>
+                            <p>Сливочное крем-брюле с карамельной подливкой </p>
+                            <a href="#">Быстрый просмотр</a>
+                        </li>
+                        <li>
+                            <img src="img/hit_6.jpg" alt="Хит 6" width="267" height="267">
+                            <p>415 ₽/кг</p>
+                            <p>Сливочное крем-брюле с карамельной подливкой </p>
+                            <a href="#">Быстрый просмотр</a>
+                        </li>
+                        <li>
+                            <img src="img/hit_7.jpg" alt="Хит 7" width="267" height="267">
+                            <p>415 ₽/кг</p>
+                            <p>Сливочное крем-брюле с карамельной подливкой </p>
+                            <a href="#">Быстрый просмотр</a>
+                        </li>
+                        <li>
+                            <img src="img/hit_8.jpg" alt="Хит 8" width="267" height="267">
                             <p>415 ₽/кг</p>
                             <p>Сливочное крем-брюле с карамельной подливкой </p>
                             <a href="#">Быстрый просмотр</a>
@@ -171,64 +210,64 @@
             </div>
         </section>
     </main>
-    <footer>
+
+    <footer class="main-footer">
         <div>
-            <div>
-                <a href="#">Facebook</a>
-                <a href="#">VK</a>
-                <a href="#">Insta</a>
-                <a href="#">Twitter</a>
+            <div class="footer-social">
+                <a class="social-btn" href="#">Facebook</a>
+                <a class="social-btn" href="#">VK</a>
+                <a class="social-btn" href="#">Insta</a>
+                <a class="social-btn" href="#">Twitter</a>
             </div>
-            <div>
-                <a href="#">Для поставщиков</a>
-                <a href="#">О производстве</a>
-                <a href="#">Наши документы</a>
-                <a href="#">Экологические стандарты</a>
+            <div class="footer-menu">
+                <a class="menu-link" href="#">Для поставщиков</a>
+                <a class="menu-link" href="#">О производстве</a>
+                <a class="menu-link" href="#">Наши документы</a>
+                <a class="menu-link" href="#">Экологические стандарты</a>
             </div>
-            <div>
-                <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="https://via.placeholder.com/150x100" alt="Логотип HTMLAcademy"></a>
-                <p>Сделано в HTML Academy © 2021</p>
+            <div class="footer-academy">
+                <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/Logo-academy.svg" alt="Логотип HTMLAcademy" />
+                    <p>Сделано в HTML Academy © 2021</p>
+                </a>
             </div>
         </div>
     </footer>
-    <section>
-        <div>
-            <form action="https://echo.htmlacademy.ru" method="POST">
-                <p>
-                    <label for="login-login">Логин</label>
-                    <input id="login-login" type="email" name="login" placeholder="email@example.com">
-                </p>
-                <p>
-                    <label for="login-password">Пароль</label>
-                    <input id="login-password" type="password" name="password" placeholder="......">
-                </p>
-                <p><button type="submit">Войти</button></p>
-                <p>
-                    <a href="#">Забыли пароль?</a><br>
-                    <a href="#">Новая регистрация</a>
-                </p>
-            </form>
-        </div>
+
+    <section class="modal">
+        <h2>Личный кабинет</h2>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+            <p>
+                <label for="login-login">Логин</label>
+                <input id="login-login" type="email" name="login" placeholder="email@example.com" />
+            </p>
+            <p>
+                <label for="login-password">Пароль</label>
+                <input id="login-password" type="password" name="password" placeholder="......" />
+            </p>
+            <p><button class="btn" type="submit">Войти</button></p>
+            <p>
+                <a href="#">Забыли пароль?</a><br />
+                <a href="#">Новая регистрация</a>
+            </p>
+        </form>
     </section>
-    <section>
-        <div>
-            <form>
-                <input type="text" placeholder="Крем-брюле">
-                <button type="submit"></button>
-            </form>
-        </div>
+
+    <section class="modal">
+        <form>
+            <input type="text" placeholder="Крем-брюле" />
+            <button type="submit"></button>
+        </form>
     </section>
-    <section>
-        <div>
-            <form>
-                <input type="text" placeholder="Имя Фамилия" id="name"><br>
-                <input type="email" placeholder="email@example.com" id="email"><br>
-                <input type="text" placeholder="В свободной форме" id="Aboute"><br>
-                <button type="submit">Отправить</button><br>
-            </form>
-        </div>
+
+    <section class="modal">
+        <form>
+            <input type="text" placeholder="Имя Фамилия" id="name" /><br />
+            <input type="email" placeholder="email@example.com" id="email" /><br />
+            <input type="text" placeholder="В свободной форме" id="Aboute" /><br />
+            <button class="btn" type="submit">Отправить</button><br />
+        </form>
     </section>
-    <section>
+    <section class="modal">
         <div>
             <ul>
                 <li>
