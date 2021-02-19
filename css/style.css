@@ -41,8 +41,8 @@
 
 /* Global */
 
-.main-body {
-  min-width: 940px;
+.page-body {
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-weight: 400;
@@ -73,6 +73,13 @@ img {
 }
 
 
+.inner-page, .main-header {
+  background-color: var(--basic-green);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+}
+
 /* Main navigation */
 
 .main-header {
@@ -96,6 +103,11 @@ img {
 .nav-link:active {
   background: #EDEDED;
   box-shadow: inset 0px 2px 1px #696969;
+}
+
+.catalog {
+  background: #D07058;
+  border-radius: 26px;
 }
 
 
@@ -149,7 +161,7 @@ img {
 }
 
 .conteiner {
-  width: 900px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -243,6 +255,7 @@ img {
 .sale-item:first-child {
   background-image: url("../img/Crimson_bkgr.jpg");
   background-repeat: no-repeat;
+  background-color: #760013;
   width: 560px;
   height: 230px;
   border-radius: 16px;
@@ -251,13 +264,13 @@ img {
 .sale-item:last-child {
   background-image: url("../img/chocolate_bkgr.jpg");
   background-repeat: no-repeat;
+  background-color: #311a10;
   width: 560px;
   height: 230px;
   border-radius: 16px;
 }
 
 /* Hits */
-
 
 .hit-list {
   margin: 0;
@@ -306,11 +319,12 @@ img {
   line-height: 22px;
   font-weight: 400;
   background-image: url(../img/pattern.jpg);
+  background-color: #efe4cc;
   background-position: center;
   border-radius: 16px;
   color: var(--basic-black);
-  width: 1146;
-  height: 306;
+  width: 1146px;
+  height: 306px;
 }
 
 .seo-title {
@@ -324,6 +338,7 @@ img {
 
 .new-blog {
   background-image: url(../img/Strawberry_bkgr.jpg);
+  background-color: var(--basic-white);
   border-radius: 16px;
   width: 560px;
   height: 220px;
@@ -397,6 +412,9 @@ img {
 
 .map {
   background-image: url(../img/map.jpg);
+  background-color: var(--light-grey);
+  height: 430px;
+  width: 100%;
 }
 
 .contacts {
@@ -543,3 +561,59 @@ img {
 }
 
 
+.page-title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.breadcrumbs {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  color: var(--basic-orange-extra);
+}
+
+.breadcrumbs-current {
+  color: var(--basic-white);
+}
+
+.filter legend {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.filter select,
+.filter ul {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  color: var(--basic-white);
+}
+
+.filter select:hover,
+.filter select:focus {
+  color: var(--basic-black);
+}
+
+.filter-apply {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid var(--basic-white);
+  box-sizing: border-box;
+  border-radius: 20px;
+  color: var(--basic-white);
+}
+
+.filter-apply:hover,
+.filter-apply:focus {
+  background: var(--basic-white);
+  border-radius: 20px;
+  color: var(--basic-black);
+}
+
+.filter-apply:active {
+  box-shadow: inset 0px 2px 1px #696969;
+}
