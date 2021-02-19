@@ -489,6 +489,15 @@ img {
   line-height: 18px;
 }
 
+.catalog-link:hover,
+.catalog-link:focus {
+  background: var(--basic-pink);
+}
+
+.catalog-link:active {
+  background: var(--basic-orange-light);
+}
+
 .modal-login {
  width: 277px;
  height: 214px;
