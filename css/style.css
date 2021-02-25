@@ -86,6 +86,11 @@
   align-content: start;
 }
 
+.inner-page {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  background-color: #849D8F;
+}
+
 .container {
   width: 1146px;
   margin: 0 auto;
@@ -118,6 +123,7 @@ img {
 
 
 .inner-page, .main-header {
+
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -154,8 +160,7 @@ img {
   background: var(--link-white);
   box-shadow: inset 0px 2px 1px var(--shadow-active);
 }
-
-.nav-item:focus,
+.nav-item:hover .dropdown-list,
 .nav-item:focus-within .dropdown-list {
   display: block;
   background-color: var(--basic-white);
@@ -238,6 +243,7 @@ img {
 
 .info {
   background-color: transparent;
+  justify-self: end;
 }
 
 .info-time {
@@ -255,6 +261,17 @@ img {
 .info a:focus {
   color: var(--basic-orange-extra);
 }
+
+.page-catalog {
+  display: grid;
+  grid-template-rows: min-content auto 1fr;
+}
+
+.filter {
+  max-width: 875px;
+  margin-bottom: 40px;
+}
+
 
 /* slider */
 
@@ -405,6 +422,7 @@ img {
   padding: 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  column-gap: 26px;
 }
 
 .catalog-img {
@@ -448,6 +466,17 @@ img {
 .catalog-button {
   border-radius: 50px;
 }
+
+.pagination-list {
+  display: inline;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  background-color: var(--white-very-transparent);
+  border-radius: 50%;
+}
+
 /* CEO */
 
 .seo {
@@ -754,12 +783,16 @@ img {
   font-weight: 700;
   font-size: 35px;
   line-height: 41px;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .breadcrumbs {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
+  padding: 0;
+  margin: 0;
 }
 
 .breadcrumbs a:hover,
@@ -769,6 +802,14 @@ img {
 
 .breadcrumbs-current {
   color: var(--basic-white);
+}
+
+.main-filter {
+  margin-bottom: 40px;
+}
+
+.filter {
+  margin: 0;
 }
 
 .filter legend {
