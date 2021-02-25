@@ -196,7 +196,7 @@ img {
   display: none;
 }
 
-.catalog {
+.catalog-active {
   background: var(--bkgr-catalog);
   border-radius: 26px;
 }
