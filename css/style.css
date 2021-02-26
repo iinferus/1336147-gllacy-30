@@ -169,6 +169,7 @@ img {
   box-shadow: 0px 20px 20px var(--modal-transparent);
   font-weight: 400;
   border-radius: 4px;
+  padding: 0;
 }
 
 .dropdown-link {
@@ -471,11 +472,31 @@ img {
   display: inline;
 }
 
+.pagination-item a {
+  border-radius: 50%;
+}
+
 .pagination-item a:hover,
 .pagination-item a:focus {
   background-color: var(--white-very-transparent);
-  border-radius: 50%;
 }
+
+.pagination-item-current a {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.pagination-item-disabled path{
+  fill-opacity: 0.2;
+  background: transparent;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
 
 /* CEO */
 
