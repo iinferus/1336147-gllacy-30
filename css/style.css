@@ -131,7 +131,7 @@ img {
 
 .inner-page {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
-  background-color: #849D8F;
+  background-color: var(--bkgr-green);
 }
 
 .container {
@@ -163,13 +163,11 @@ img {
   margin-bottom: 70px;
 }
 
-.container-header {
-  display: grid;
-  grid-template-columns: auto;
-}
+
 
 .main-navigation {
-  display: flex;
+  display: grid;
+  grid-template-columns: min-content 1fr max-content;
   align-items: center;
   max-width: 1200px;
   min-height: 65px;
@@ -177,17 +175,17 @@ img {
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
   width: auto;
   margin: 0;
   padding: 0;
   margin-left: 20px;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .user-list {
   display: flex;
-  width: auto;
+  flex-wrap: wrap;
+  max-width: 350px;
   margin: 0;
   padding: 0;
   margin-left: auto;
@@ -222,19 +220,45 @@ img {
   flex-wrap: wrap;
   background-color: var(--basic-white);
   width: 145px;
-  height: 170px;
   box-shadow: 0px 20px 20px var(--modal-transparent);
   font-weight: 400;
   border-radius: 4px;
-  padding: 0;
+  transition: all .1s;
+  padding: 2px 0 7px;
+  margin: 0%;
 }
 
 .dropdown-list {
   display: none;
   position: absolute;
+  top: 65px;
+  left: 220px;
+  width: 143px;
+  background: var(--basic-white);
+  box-shadow: 0px 20px 20px var(--modal-transparent);
+  border-radius: 4px;
+  transition: all .1s;
+  z-index: 1;
+  margin: 0;
+  padding: 2px 0 7px;
+  color: var(--basic-black);
+}
+
+.dropdown-list::before {
+  position: absolute;
+  top: 65px;
+  left: 220px;
+  transform: translateX(-50%);
+  width: 128px;
+  height: 1px;
+  background-color: var(--basic-black);
+  opacity: 0.2;
 }
 
 .dropdown-link {
+  display: flex;
+  align-items: center;
+  padding: 7px 19px 7px 22px;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
@@ -242,16 +266,19 @@ img {
 }
 
 .new-link {
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-weight: 700;
   line-height: 18px;
 }
 
-.dropdown-item:hover,
-.dropdown-item:focus {
+.dropdown-link:hover,
+.dropdown-link:focus {
   background: var(--basic-pink);
 }
 
-.dropdown-item:active {
+.dropdown-link:active {
   background: var(--basic-orange-light);
 }
 
@@ -266,6 +293,8 @@ img {
 .user-link {
   display: flex;
   background: var(--white-very-transparent);
+  border: none;
+  color: var(--basic-white);
   border-radius: 20px;
   font-size: 14px;
   line-height: 16px;
@@ -317,6 +346,8 @@ img {
 }
 
 .info {
+  justify-content: flex-end;
+  display: flex;
   background-color: transparent;
   justify-self: end;
 }
@@ -481,28 +512,25 @@ img {
   padding: 0;
 }
 
-.sale-item:first-child {
-  background-image: url("../img/Crimson_bkgr.jpg");
-  background-color: var(--crimson-bkgr);
+.sale-crimson {
+  grid-column: 1 /2;
+  background: var(--crimson-bkgr) url("../img/Crimson_bkgr.jpg") center center/cover no-repeat;
 }
 
-.sale-item:last-child {
-  background-image: url("../img/chocolate_bkgr.jpg");
-  background-color: var(--chocolate-bkgr);
+.sale-chocolate {
+  grid-column: 2 /3;
+  background: var(--chocolate-bkgr) url("../img/chocolate_bkgr.jpg") center center/cover no-repeat;
 }
 
 .sale-item{
-  display: flex;
-  flex-direction: column;
-  background-repeat: no-repeat;
-  align-items: flex-start;
-  width: 560px;
-  height: 230px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   border-radius: 16px;
   padding: 16px 16px 22px 22px;
 }
 
 .sale-title {
+  grid-column: 1 / 3;
   margin: 0;
   padding: 0;
   padding-bottom: 16px;
@@ -511,6 +539,7 @@ img {
 }
 
 .sale-text {
+  grid-column: 1 / 3;
   margin: 0;
   padding: 0;
   padding-bottom: 40px;
@@ -518,9 +547,13 @@ img {
 }
 
 .sale-btn {
-  justify-self: flex-end;
-  align-self: flex-end;
+  grid-column: 2 / 3;
+  display: flex;
+  justify-content: center;
+  justify-self: end;
+  align-self: end;
   padding: 14px 22px;
+  max-height: 48px;
 }
 
 /* Hits */
@@ -631,6 +664,7 @@ img {
   bottom: -55px;
   border-radius: 50px;
   z-index: 1;
+  padding: 12px 16px;
 }
 
 .pagination-list {
@@ -736,6 +770,7 @@ img {
 
 .new-blog p {
   margin: 0;
+  max-width: 280px;
 }
 
 .blog-link {
@@ -765,6 +800,7 @@ img {
 
 .subscribe-wrapper {
   background: var(--basic-extra-white);
+  height: 100%;
   border-radius: 16px;
   padding: 24px 20px 36px 21px;
 }
@@ -1180,6 +1216,11 @@ img {
   line-height: 41px;
   margin: 0;
   margin-bottom: 30px;
+}
+
+.index-block {
+  max-width: 500px;
+  padding-top: 16px;
 }
 
 .breadcrumbs {
