@@ -16,11 +16,12 @@
 </head>
 
 <body class="page-body inner-page">
+
   <header class="main-header page-header">
     <div class="site-wrapper">
       <div class="container container-header">
-        <nav class="main-navigation">
-          <a class="main-header-logo" href="index.html">
+        <div class="main-navigation">
+          <a class="main-header-logo">
             <svg width="154" height="64" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M59.341 43.15a3.806 3.806 0 00-2.152.38s-3.002 2.58-17.856-.39c-10.92-2.188-16.595-1.962-16.595-1.962s1.832-12.84 1.332-16.436a1.036 1.036 0 00-.342-.686.985.985 0 00-.71-.25c-1.09 0-1.751.432-1.751 1.028a49.9 49.9 0 01-.25 7.273 6.136 6.136 0 01-2.421 3.09 5.884 5.884 0 01-3.755.937c-4.754-.339-5.755-3.852-6.175-6.246-.42-2.393-.66-9.081.59-11.814 0 0 7.167.257 11.67-3.688 4.505-3.944 4.225-7.355 2.093-8.814-2.132-1.459-7.127-1.202-10.96 2.394a19.896 19.896 0 00-5.085 7.19S1.34 13.925 2.63 7.885c1.372-6.308 9.77-5.568 9.77-5.568 1.75.349 1.83.513 2.411-.083.58-.595 1.001-2.136-1.751-2.229C10.307-.088 2.05 1.31.468 6.938-1.223 12.928 1.9 17.211 6.093 17.88c0 0-2.292 10.376.541 15.512a9.05 9.05 0 003.555 3.87 8.723 8.723 0 005.053 1.185c1.651 0 4.574-.945 5.404-2.312 0 0-.39 3.678-.72 5.014 0 0-6.946-.093-9.118 1.027-3.694 2.003-2.923 6.698-1.502 8.362 1.201 1.418 4.815 2.188 7.427.925a10.017 10.017 0 003.757-3.231 10.368 10.368 0 001.798-4.68 38.73 38.73 0 0112.541 1.398c6.176 1.89 14.773 3.657 17.356 3.657 2.582 0 8.007-.76 8.337-2.97.18-1.458-.35-2.218-1.18-2.485zM15.872 8.819s3.283-2.568 4.855-.965c.352.39.556.899.572 1.431a2.245 2.245 0 01-.482 1.466c-.661.883-2.402 3.678-10.67 5.064 0 0 2.602-4.684 5.725-6.996zm.27 39.973s-4.534 2.537-5.004-.904a3.314 3.314 0 01.18-2.153 3.2 3.2 0 011.462-1.556c.79-.4 1.871-.904 6.585-.73a6.614 6.614 0 01-.94 3.098 6.402 6.402 0 01-2.283 2.245z"
@@ -36,127 +37,123 @@
                 fill="#FBFCFB" />
             </svg>
           </a>
-          <ul class="site-navigation list-hidden">
-            <li class="nav-item">
-              <a class="nav-link catalog-active" href="catalog.html"><span>Каталог</span></a>
-              <ul class="dropdown-list list-hidden">
-                <li class="dropdown-item">
-                  <a class="dropdown-link new-link" href="#">Новинки</a>
-                </li>
-                <li class="dropdown-item">
-                  <a class="dropdown-link" href="catalog.html">Сливочное</a>
-                </li>
-                <li class="dropdown-item">
-                  <a class="dropdown-link" href="#">Щербеты</a>
-                </li>
-                <li class="dropdown-item">
-                  <a class="dropdown-link" href="#">Фруктовый лед</a>
-                </li>
-                <li class="dropdown-item">
-                  <a class="dropdown-link" href="#">Мелорин</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item"><a class="nav-link base-link" href="#"><span>Доставка и оплата</span></a></li>
-            <li class="nav-item"><a class="nav-link base-link" href="#"><span>О компании</span></a></li>
-          </ul>
-          <ul class="user-list list-hidden">
-            <li class="user-item">
-              <button class="user-link user-search">
-                <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M16 14.665l-4.921-4.932a6.144 6.144 0 00-.994-8.273 6.113 6.113 0 00-8.307.352 6.141 6.141 0 00-.293 8.328 6.11 6.11 0 008.262.937L14.659 16 16 14.665zm-9.918-4.288a4.245 4.245 0 01-3.928-2.63 4.269 4.269 0 01.922-4.643 4.248 4.248 0 014.632-.923 4.253 4.253 0 012.624 3.936 4.274 4.274 0 01-1.247 3.01 4.256 4.256 0 01-3.003 1.25z"
-                    fill="#fff" />
-                </svg>
-                <span class="visually-hidden">Поиск</span>
-              </button>
-              <div class="modal modal-search">
-                <form>
-                  <input class="input input-search" type="text" placeholder="Крем-брюле" autocomplete="off" />
-                </form>
-              </div>
-            </li>
-            <li class="user-item">
-              <button class="user-link user-login">
-                <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" fill="#fff" />
-                  <path d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 002 2h13a2 2 0 002-2V2a2 2 0 00-2-2z"
-                    fill="#fff" />
-                </svg>
-                <span>Вход</span>
-              </button>
-              <div class="modal modal-login">
-                <h2 class="visually-hidden">Личный кабинет</h2>
-                <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
-                  <label for="login-login" class="visually-hidden">Логин</label>
-                  <input class="input input-login" id="login-login" type="email" name="login"
-                    placeholder="email@example.com" autocomplete="off" />
-                  <label for="login-password" class="visually-hidden">Пароль</label>
-                  <input class="input input-passwd" id="login-password" type="password" name="password"
-                    placeholder="......" autocomplete="off" />
-                  <button class="button submit-btn" type="submit">Войти</button>
-                  <div class="modal-login_link">
-                    <a class="login-link base-link" href="#">Забыли пароль?</a>
-                    <a class="login-link base-link" href="#">Новая регистрация</a>
-                  </div>
-                </form>
-              </div>
-            </li>
-            <li class="user-item">
-              <button class="user-link user-basket basket-active">
-                <svg width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="svg-black"
-                    d="M7.03 20a2 2 0 002.02-2 2 2 0 00-2.02-2 2 2 0 00-2.01 2c0 1.1.9 2 2.01 2zM16.1 20a2 2 0 002.02-2 2 2 0 00-2.02-2 2 2 0 00-2.01 2c0 1.1.9 2 2.01 2zM5.7 2l-.24-2H0v2h3.67l1.5 13H19.3L21 2H5.7zm11.8 11H6.97l-1-9h12.72l-1.19 9z"
-                    fill="#fff" />
-                  <path d="M5.94 4l1.03 9H17.5l1.2-9H5.93z" fill="#E84D37" fill-opacity="0" />
-                </svg>
-                <span>2 товара</span>
-              </button>
-              <div class="modal modal-basket">
-                <form action="#" class="modal-basket-form">
-                  <ul class="modal-basket-list">
-                    <li class="modal-basket-item">
-                      <div class="modal-basket-cross">
-                        <svg aria-hidden="true" focusable="false" width="11" height="11" viewBox="0 0 11 11" fill="none"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M11 0.712591L10.2874 0L5.5 4.78741L0.712591 0L0 0.712591L4.78741 5.5L0 10.2874L0.712591 11L5.5 6.21259L10.2874 11L11 10.2874L6.21259 5.5L11 0.712591Z"
-                            fill="#2C2829"></path>
-                        </svg>
-                      </div>
-                      <img src="img/catalog-1.jpg" alt="Фото товара" class="modal-basket-preview" width="33" height="33">
-                      <a class="modal-basket-link" href="#">Пломбир с апельсиновым джемом</a>
-                      <p class="modal-basket-weight">1,5 кг х <span class="basket-weight-price">200 руб.</span></p>
-                      <p class="modal-basket-price">300 руб.</p>
-                    </li>
-                    <li class="modal-basket-item">
-                      <div class="modal-basket-cross">
-                        <svg aria-hidden="true" focusable="false" width="11" height="11" viewBox="0 0 11 11" fill="none"
-                          xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M11 0.712591L10.2874 0L5.5 4.78741L0.712591 0L0 0.712591L4.78741 5.5L0 10.2874L0.712591 11L5.5 6.21259L10.2874 11L11 10.2874L6.21259 5.5L11 0.712591Z"
-                            fill="#2C2829"></path>
-                        </svg>
-                      </div>
-                      <img src="img/catalog-3.jpg" alt="Фото товара" class="modal-basket-preview" width="33" height="33">
-                      <a class="modal-basket-link" href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
-                      <p class="modal-basket-weight">1,5 кг х <span class="basket-weight-price">300 руб.</span></p>
-                      <p class="modal-basket-price">450 руб.</p>
-                    </li>
-                  </ul>
-                  <div class="modal-basket-checkout">
-                    <p class="modal-basket-total">Итого: 750 руб.</p>
-                    <button class="button basket-btn" type="submit">Оформить заказ</button>
-                  </div>
-                </form>
-              </div>
-            </li>
-          </ul>
-        </nav>
-        <div class="info">
-          <p><span class="info-time">с 10 до 20, ежедневно</span>
-            <a class="info-phone" href="tel:+88124502525">8 812 450-25-25</a>
-          </p>
+          <nav>
+            <ul class="site-navigation list-hidden">
+              <li class="nav-item">
+                <a class="nav-link catalog-active" href="catalog.html"><span>Каталог</span></a>
+                <ul class="dropdown-list list-hidden">
+                  <li class="dropdown-item">
+                    <a class="dropdown-link new-link" href="#">Новинки</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="catalog.html">Сливочное</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">Щербеты</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">Фруктовый лед</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">Мелорин</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link base-link" href="#"><span>Доставка и оплата</span></a></li>
+              <li class="nav-item"><a class="nav-link base-link" href="#"><span>О компании</span></a></li>
+            </ul>
+          </nav>
+          <div class="user-nav list-hidden">
+            <button class="user-btn user-search">
+              <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16 14.665l-4.921-4.932a6.144 6.144 0 00-.994-8.273 6.113 6.113 0 00-8.307.352 6.141 6.141 0 00-.293 8.328 6.11 6.11 0 008.262.937L14.659 16 16 14.665zm-9.918-4.288a4.245 4.245 0 01-3.928-2.63 4.269 4.269 0 01.922-4.643 4.248 4.248 0 014.632-.923 4.253 4.253 0 012.624 3.936 4.274 4.274 0 01-1.247 3.01 4.256 4.256 0 01-3.003 1.25z"
+                  fill="#fff" />
+              </svg>
+              <span class="visually-hidden">Поиск</span>
+            </button>
+            <div class="modal modal-search">
+              <form>
+                <input class="input input-search" type="text" placeholder="Крем-брюле" autocomplete="off" />
+              </form>
+            </div>
+            <button class="user-btn user-login">
+              <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" fill="#fff" />
+                <path d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 002 2h13a2 2 0 002-2V2a2 2 0 00-2-2z"
+                  fill="#fff" />
+              </svg>
+              <span>Вход</span>
+            </button>
+            <div class="modal modal-login">
+              <h2 class="visually-hidden">Личный кабинет</h2>
+              <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+                <label for="login-login" class="visually-hidden">Логин</label>
+                <input class="input input-login" id="login-login" type="email" name="login"
+                  placeholder="email@example.com" autocomplete="off" />
+                <label for="login-password" class="visually-hidden">Пароль</label>
+                <input class="input input-passwd" id="login-password" type="password" name="password"
+                  placeholder="......" autocomplete="off" />
+                <button class="button submit-btn" type="submit">Войти</button>
+                <div class="modal-login_link">
+                  <a class="login-link" href="#">Забыли пароль?</a>
+                  <a class="login-link" href="#">Новая регистрация</a>
+                </div>
+              </form>
+            </div>
+            <button class="user-btn user-basket basket-active">
+              <svg width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="svg-black"
+                  d="M7.03 20a2 2 0 002.02-2 2 2 0 00-2.02-2 2 2 0 00-2.01 2c0 1.1.9 2 2.01 2zM16.1 20a2 2 0 002.02-2 2 2 0 00-2.02-2 2 2 0 00-2.01 2c0 1.1.9 2 2.01 2zM5.7 2l-.24-2H0v2h3.67l1.5 13H19.3L21 2H5.7zm11.8 11H6.97l-1-9h12.72l-1.19 9z"
+                  fill="#fff" />
+                <path d="M5.94 4l1.03 9H17.5l1.2-9H5.93z" fill="#E84D37" fill-opacity="0" />
+              </svg>
+              <span>2 товара</span>
+            </button>
+            <div class="modal modal-basket">
+              <form action="#" class="modal-basket-form">
+                <ul class="modal-basket-list">
+                  <li class="modal-basket-item">
+                    <div class="modal-basket-cross">
+                      <svg aria-hidden="true" focusable="false" width="11" height="11" viewBox="0 0 11 11" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M11 0.712591L10.2874 0L5.5 4.78741L0.712591 0L0 0.712591L4.78741 5.5L0 10.2874L0.712591 11L5.5 6.21259L10.2874 11L11 10.2874L6.21259 5.5L11 0.712591Z"
+                          fill="#2C2829"></path>
+                      </svg>
+                    </div>
+                    <img src="img/catalog-1.jpg" alt="Фото товара" class="modal-basket-preview" width="33" height="33">
+                    <a class="modal-basket-link" href="#">Пломбир с апельсиновым джемом</a>
+                    <p class="modal-basket-weight">1,5 кг х <span class="basket-weight-price">200 руб.</span></p>
+                    <p class="modal-basket-price">300 руб.</p>
+                  </li>
+                  <li class="modal-basket-item">
+                    <div class="modal-basket-cross">
+                      <svg aria-hidden="true" focusable="false" width="11" height="11" viewBox="0 0 11 11" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M11 0.712591L10.2874 0L5.5 4.78741L0.712591 0L0 0.712591L4.78741 5.5L0 10.2874L0.712591 11L5.5 6.21259L10.2874 11L11 10.2874L6.21259 5.5L11 0.712591Z"
+                          fill="#2C2829"></path>
+                      </svg>
+                    </div>
+                    <img src="img/catalog-3.jpg" alt="Фото товара" class="modal-basket-preview" width="33" height="33">
+                    <a class="modal-basket-link" href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
+                    <p class="modal-basket-weight">1,5 кг х <span class="basket-weight-price">300 руб.</span></p>
+                    <p class="modal-basket-price">450 руб.</p>
+                  </li>
+                </ul>
+                <div class="modal-basket-checkout">
+                  <p class="modal-basket-total">Итого: 750 руб.</p>
+                  <button class="button basket-btn" type="submit">Оформить заказ</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="info">
+            <p><span class="info-time">с 10 до 20, ежедневно</span>
+              <a class="info-phone base-link" href="tel:+88124502525">8 812 450-25-25</a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -269,8 +266,7 @@
           <li class="catalog-item">
             <div class="catalog-content">
               <img class="catalog-img" src="img/catalog-1.jpg" alt="Первый товар" width="267" height="267">
-              <p class="catalog-cost">310 <span class="currency">&#8381;</span><span
-                  class="unit">/кг</span></p>
+              <p class="catalog-cost">310 <span class="currency">&#8381;</span><span class="unit">/кг</span></p>
             </div>
             <h3 class="catalog-name">
               <a class="catalog-link base-link" href="#" aria-label="Перейти на страницу товара">Сливочное с
@@ -282,8 +278,7 @@
           <li class="catalog-item">
             <div class="catalog-content">
               <img class="catalog-img" src="img/catalog-2.jpg" alt="Второй товар" width="267" height="267">
-              <p class="catalog-cost">380 <span class="currency">&#8381;</span><span
-                  class="unit">/кг</span></p>
+              <p class="catalog-cost">380 <span class="currency">&#8381;</span><span class="unit">/кг</span></p>
             </div>
             <h3 class="catalog-name">
               <a class="catalog-link base-link" href="#" aria-label="Перейти на страницу товара">Сливочно-кофейное с
@@ -295,8 +290,7 @@
           <li class="catalog-item">
             <div class="catalog-content">
               <img class="catalog-img" src="img/catalog-3.jpg" alt="Тертий товар" width="267" height="267">
-              <p class="catalog-cost">355 <span class="currency">&#8381;</span><span
-                  class="unit">/кг</span></p>
+              <p class="catalog-cost">355 <span class="currency">&#8381;</span><span class="unit">/кг</span></p>
             </div>
             <h3 class="catalog-name">
               <a class="catalog-link base-link" href="#" aria-label="Перейти на страницу товара">Сливочно-клубничное с
@@ -307,8 +301,7 @@
           <li class="catalog-item">
             <div class="catalog-content">
               <img class="catalog-img" src="img/catalog-4.jpg" alt="Четвертый товар" width="267" height="267">
-              <p class="catalog-cost">415 <span class="currency">&#8381;</span><span
-                  class="unit">/кг</span></p>
+              <p class="catalog-cost">415 <span class="currency">&#8381;</span><span class="unit">/кг</span></p>
             </div>
             <h3 class="catalog-name">
               <a class="catalog-link base-link" href="#" aria-label="Перейти на страницу товара">Сливочное крем-брюле
@@ -319,8 +312,7 @@
           <li class="catalog-item">
             <div class="catalog-content">
               <img class="catalog-img" src="img/catalog-5.jpg" alt="Пятый товар" width="267" height="267">
-              <p class="catalog-cost">325 <span class="currency">&#8381;</span><span
-                  class="unit">/кг</span></p>
+              <p class="catalog-cost">325 <span class="currency">&#8381;</span><span class="unit">/кг</span></p>
             </div>
             <h3 class="catalog-name">
               <a class="catalog-link base-link" href="#" aria-label="Перейти на страницу товара">Сливочное с брусничным
@@ -331,8 +323,7 @@
           <li class="catalog-item">
             <div class="catalog-content">
               <img class="catalog-img" src="img/catalog-6.jpg" alt="Шестой товар" width="267" height="267">
-              <p class="catalog-cost">410 <span class="currency">&#8381;</span><span
-                  class="unit">/кг</span></p>
+              <p class="catalog-cost">410 <span class="currency">&#8381;</span><span class="unit">/кг</span></p>
             </div>
             <h3 class="catalog-name">
               <a class="catalog-link base-link" href="#" aria-label="Перейти на страницу товара">Сливочно-черничное с
@@ -344,8 +335,7 @@
           <li class="catalog-item">
             <div class="catalog-content">
               <img class="catalog-img" src="img/catalog-7.jpg" alt="Седьмой товар" width="267" height="267">
-              <p class="catalog-cost">315 <span class="currency">&#8381;</span><span
-                  class="unit">/кг</span></p>
+              <p class="catalog-cost">315 <span class="currency">&#8381;</span><span class="unit">/кг</span></p>
             </div>
             <h3 class="catalog-name">
               <a class="catalog-link base-link" href="#" aria-label="Перейти на страницу товара">Сливочно-лимонное с
@@ -356,8 +346,7 @@
           <li class="catalog-item">
             <div class="catalog-content">
               <img class="catalog-img" src="img/catalog-8.jpg" alt="Восьмой товар" width="267" height="267">
-              <p class="catalog-cost">320 <span class="currency">&#8381;</span><span
-                  class="unit">/кг</span></p>
+              <p class="catalog-cost">320 <span class="currency">&#8381;</span><span class="unit">/кг</span></p>
             </div>
             <h3 class="catalog-name">
               <a class="catalog-link base-link" href="#" aria-label="Перейти на страницу товара">Сливочное с шоколадной
@@ -368,8 +357,7 @@
           <li class="catalog-item">
             <div class="catalog-content">
               <img class="catalog-img" src="img/catalog-9.jpg" alt="Девятый товар" width="267" height="267">
-              <p class="catalog-cost">440 <span class="currency">&#8381;</span><span
-                  class="unit">/кг</span>
+              <p class="catalog-cost">440 <span class="currency">&#8381;</span><span class="unit">/кг</span>
               </p>
             </div>
             <h3 class="catalog-name">
@@ -381,8 +369,7 @@
           <li class="catalog-item">
             <div class="catalog-content">
               <img class="catalog-img" src="img/catalog-10.jpg" alt="Десятый товар" width="267" height="267">
-              <p class="catalog-cost">435 <span class="currency">&#8381;</span><span
-                  class="unit">/кг</span></p>
+              <p class="catalog-cost">435 <span class="currency">&#8381;</span><span class="unit">/кг</span></p>
             </div>
             <h3 class="catalog-name">
               <a class="catalog-link base-link" href="#" aria-label="Перейти на страницу товара">Сливочноe с ментоловым
@@ -393,8 +380,7 @@
           <li class="catalog-item">
             <div class="catalog-content">
               <img class="catalog-img" src="img/catalog-11.jpg" alt="Одиннадцатый товар" width="267" height="267">
-              <p class="catalog-cost">355 <span class="currency">&#8381;</span><span
-                  class="unit">/кг</span></p>
+              <p class="catalog-cost">355 <span class="currency">&#8381;</span><span class="unit">/кг</span></p>
             </div>
             <h3 class="catalog-name">
               <a class="catalog-link base-link" href="#" aria-label="Перейти на страницу товара">Сливочное с кусочками
@@ -406,8 +392,7 @@
           <li class="catalog-item">
             <div class="catalog-content">
               <img class="catalog-img" src="img/catalog-12.jpg" alt="Двенадцатый товар" width="267" height="267">
-              <p class="catalog-cost">420 <span class="currency">&#8381;</span><span
-                  class="unit">/кг</span></p>
+              <p class="catalog-cost">420 <span class="currency">&#8381;</span><span class="unit">/кг</span></p>
             </div>
             <h3 class="catalog-name">
               <a class="catalog-link base-link" href="#" aria-label="Перейти на страницу товара">Сливочное с мятным
