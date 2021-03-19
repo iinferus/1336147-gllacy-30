@@ -78,7 +78,8 @@
               </button>
               <div class="modal modal-search">
                 <form>
-                  <input class="input input-search" type="text" placeholder="Крем-брюле" autocomplete="off" />
+                  <input class="input input-search" type="text" id="input-search" placeholder="Крем-брюле" autocomplete="off" />
+                  <label class="visually-hidden" for="input-search">Поиск</label>
                 </form>
               </div>
             </div>
@@ -191,7 +192,8 @@
         <form class="filter-form" method="GET" id="filter-catalog" action="https://echo.htmlacademy.ru" target="_blank">
           <fieldset class="filter-group select-group">
             <legend class="filter-label select-label">Сортировка:</legend>
-            <select class="filter-select custom-select" form="filter-catalog">
+            <label class="visually-hidden" for="filter-sort"></label>
+            <select class="filter-select custom-select" id="filter-sort" form="filter-catalog">
               <option class="select-option" value="по популярности">по популярности</option>
               <option class="select-option" value="сначала недорогие">сначала недорогие</option>
               <option class="select-option" value="сначала дорогие">сначала дорогие</option>
@@ -448,7 +450,7 @@
     </div>
   </main>
 
-  <footer class="main-footer">
+  <footer class="main-footer inner-footer">
     <div class="container">
       <div class="footer-social">
         <ul class="social-list list-hidden">
