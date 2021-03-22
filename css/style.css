@@ -576,7 +576,7 @@ img {
 }
 
 .slide-button {
-  padding: 9px 30px;
+  padding: 9px 23px;
   max-width: 500px;
   font-size: 32px;
   line-height: 44px;
@@ -1212,7 +1212,7 @@ img {
 .modal {
   display: none;
   position: absolute;
-  top: 35px;
+  top: 34px;
   right: 10px;
   background: var(--basic-extra-white);
   color: var(--basic-black);
@@ -1222,7 +1222,7 @@ img {
 
 .modal-login {
   width: 277px;
-  padding: 22px 18px;
+  padding: 20px 17px 22px 19px;
   z-index: 2;
 }
 
@@ -1235,12 +1235,12 @@ img {
 
 .input-login {
   grid-area: user;
-  margin-bottom: 19px;
+  margin-bottom: 18px;
 }
 
 .input-passwd {
   grid-area: passwd;
-  margin-bottom: 19px;
+  margin-bottom: 18px;
 }
 
 .submit-btn {
@@ -1289,6 +1289,7 @@ img {
   padding: 20px 15px;
   width: 341px;
   z-index: 2;
+  right: 11px;
 }
 
 .input-search {
@@ -1339,7 +1340,7 @@ img {
 }
 
 .subscribe-title {
-  margin: 0 0 21px;
+  margin: 0 0 20px;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
@@ -1353,8 +1354,8 @@ img {
 
 .subscribe-close {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 10px;
+  right: 16px;
   cursor: pointer;
 }
 
@@ -1365,7 +1366,7 @@ img {
 
 .subscribe-input {
   width: 267px;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
   border-radius: 4px;
   padding: 10px 14px;
 }
@@ -1378,8 +1379,8 @@ img {
 .input-about {
   resize: none;
   width: 428px;
-  margin-bottom: 27px;
-  min-height: 150px;
+  margin-bottom: 25px;
+  max-height: 154px;
 }
 
 .modal-subscribe-btn {
